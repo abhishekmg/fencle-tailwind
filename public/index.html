@@ -10,669 +10,73 @@
   <title>LeapFinance clone</title>
 </head>
 
-<body class="antialiased bg-leap-gray">
-  <nav class="container mx-auto bg-white">
+<body class="antialiased">
+  <div class="h-screen flex overflow-hidden">
 
-    <div class="max-w-5xl mx-auto bg-white py-3 flex justify-between items-center px-3">
-      <!-- left side -->
-      <div class="inline-flex items-center space-x-1">
-        <!-- the avatar and name -->
-        <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M26.9395 6.96459L24.7374 5.74929L14.3365 0.140227C14.0085 -0.0467422 13.5869 -0.0467422 13.212 0.140227L0.655917 6.96459C0.37481 7.10482 0.140554 7.38527 0.0468512 7.71246C-0.0937025 8.27337 0.187405 8.83428 0.702769 9.02125L5.05993 10.9377V17.3881C5.05993 18.5099 5.52845 19.5382 6.32492 20.2861C8.29267 22.1091 10.5415 23.6048 12.9778 24.7734L13.2589 24.9136C13.3995 25.0071 13.5869 25.0538 13.7743 25.0538C13.9617 25.0538 14.1022 25.0071 14.2896 24.9136L14.5707 24.7734C17.007 23.6048 19.209 22.0623 21.2236 20.2861C22.0201 19.5382 22.4886 18.4632 22.4886 17.3881V10.9844L26.7052 9.11473C27.5954 8.69405 27.6422 7.47875 26.7521 7.01133C26.4241 6.8711 26.0961 6.8711 25.7682 7.01133L13.7743 12.2932L3.79495 7.89943L13.7743 2.47734L23.6599 7.80595L25.2528 8.64731V21.034C25.2528 22.0156 24.8312 22.9504 24.1284 23.6048C21.0362 26.4093 17.5692 28.7932 13.8211 30.6161C10.073 28.7932 6.60602 26.4093 3.51384 23.6048C2.71737 22.9037 2.29571 21.9688 2.29571 21.034V8.50708C2.29571 8.03966 2.0146 7.61898 1.59294 7.43201C0.843322 7.15156 0 7.71246 0 8.50708V21.034C0 22.67 0.702769 24.2125 1.87405 25.2875C5.15364 28.2323 8.80803 30.7564 12.7435 32.6728L13.212 32.9065C13.3526 33 13.54 33.0467 13.7274 33.0467C13.9148 33.0467 14.0554 33 14.2428 32.9065L14.7113 32.6728C18.6936 30.7564 22.348 28.279 25.5808 25.2875C26.7989 24.2125 27.4548 22.6232 27.4548 21.034V7.99292C27.5485 7.57224 27.3143 7.15156 26.9395 6.96459ZM13.7743 14.7238C13.9148 14.7238 14.1022 14.6771 14.2428 14.6303L20.1929 12.0127V17.4348C20.1929 17.9023 20.0055 18.3229 19.6775 18.6501C17.8972 20.2394 15.9294 21.5949 13.7743 22.67C11.6191 21.5949 9.65135 20.2394 7.87101 18.6501C7.54305 18.3229 7.35564 17.9023 7.35564 17.4348V12.0127L13.3057 14.6303C13.4463 14.6771 13.6337 14.7238 13.7743 14.7238Z"
-            fill="#443EFF" />
-        </svg>
-        <p class="text-2xl font-bold">
-          LeapFinance
-        </p>
-      </div>
+    <!-- Static sidebar for desktop -->
+    <div class="flex flex-shrink-0">
+      <div class="flex flex-col w-64">
+        <!-- Sidebar component, swap this element with another sidebar if you like -->
+        <div class="flex flex-col flex-grow bg-my-gray pt-5 pb-4 overflow-y-auto">
+          
+          <div class="px-2">
+            <p>Infosis</p>
+          </div>
 
-      <!-- right side for desktop-->
-      <div class="hidden sm:inline-flex space-x-4">
-        <a href="#" class="text-sm">
-          Loans for school
-        </a>
-        <a href="#" class="text-sm">
-          Refinance
-        </a>
-        <a href="#" class="text-sm">
-          Learn
-        </a>
-        <a href="#" class="text-sm">
-          About us
-        </a>
-        <a href="#" class="text-sm">
-          Sign in
-        </a>
-      </div>
 
-      <!-- right side for mobile -->
-      <div class="inline-flex sm:hidden items-center space-x-3">
-        <button class="rounded-md bg-leap-blue px-3 py-1 text-white text-sm font-semibold leading-5 ">
-          Apply now
-        </button>
 
-        <div>
-          <svg class="h-6 w-6 text-leap-blue" fill="none" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+          <div class="mt-5 flex-1 flex flex-col">
+            <nav class="flex-1 px-2 bg-my-gray">
+              <a href="#" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                Dashboard
+              </a>
+              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                Team
+              </a>
+              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                </svg>
+                Projects
+              </a>
+              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Calendar
+              </a>
+              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                </svg>
+                Documents
+              </a>
+              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                Reports
+              </a>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
 
-
-  <!-- section one -->
-
-  <!-- desktop section one -->
-  <section class="hidden sm:block container mx-auto bg-section-one-blue px-3">
-    <div class="max-w-5xl mx-auto flex px-3">
-      <!-- left part -->
-      <div class="py-24">
-        <p class="text-leap-blue text-xl sm:text-base lg:text-xl">Get your loan offer in 10 minutes</p>
-
-        <h1 class="text-6xl sm:text-3xl lg:text-6xl font-bold text-leap-blue-1 max-w-lg tracking-tight leading-11 sm:leading-none lg:leading-11 mb-10">Education Loans for MS
-          in US</h1>
-
-        <div class="max-w-sm">
-          <div class="bg-white p-6 sm:p-4 lg:p-6 rounded-md space-y-6 mb-8">
-            <div class="inline-flex items-center space-x-4">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                  fill="white" />
-                <path
-                  d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                  stroke="#443EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              <span class="text-xl text-leap-blue-1">Loans without any collateral</span>
-            </div>
-            <div class="inline-flex items-center space-x-4">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                  fill="white" />
-                <path
-                  d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                  stroke="#443EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              <span class="text-xl text-leap-blue-1">Loans without any collateral</span>
-            </div>
-            <div class="inline-flex items-center space-x-4">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                  fill="white" />
-                <path
-                  d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                  stroke="#443EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              <span class="text-xl text-leap-blue-1">Loans without any collateral</span>
-            </div>
-          </div>
-
-
-          <button class="bg-leap-blue text-white font-semibold text-lg rounded-md py-5 px-20 sm:px-0 lg:px-20 w-full">
-            Get my instant loan offer
-          </button>
-          <div class="text-sm text-leap-gray-1 text-center mt-1">
-            From 7.99% APR · No Collateral · 10 mins
-          </div>
-
-        </div>
-
-
-
-      </div>
-      <!-- right part -->
-      <div class="section-one-fig-div">
-        <figure class="section-one-fig">
-          <img class="h-full w-full object-cover object-right" src="./img/leapfinance-girl-1.png" />
-        </figure>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- mobile section one -->
-  <div class=" block sm:hidden relative">
-
-    <section class=" container mx-auto bg-section-one-blue px-3 sm:px-0">
-      <div class="text-center space-y-3">
-        <p class="text-leap-blue text-lg pt-6">Get your loan offer in 10 minutes</p>
-        <h1 class="text-4xl font-bold text-leap-blue-1 max-w-lg tracking-tight leading-8 mb-10">Education Loans for MS
-          in US</h1>
-        <figure class="section-one-img-mobile">
-          <img src="./img/leapfinance-girl-mobile.png" />
-        </figure>
-
-      </div>
-    </section>
-
-    <div class="p-3 absolute section-one-mobile-card">
-      <div class="max-w-sm space-y-5 shadow-md">
-        <div class="bg-white p-6 rounded-md space-y-6">
-          <div class="inline-flex items-center space-x-4">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                fill="white" />
-              <path
-                d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                stroke="#443EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <span class="text-xl text-leap-blue-1">Loans without any collateral</span>
-          </div>
-          <div class="inline-flex items-center space-x-4">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                fill="white" />
-              <path
-                d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                stroke="#443EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <span class="text-xl text-leap-blue-1">Loans without any collateral</span>
-          </div>
-          <div class="inline-flex items-center space-x-4">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                fill="white" />
-              <path
-                d="M5.92311 13.6299V24.0493C7.56725 28.6767 16.8631 33 16.8631 33C25.2464 30.3835 28.0769 23.7693 28.0769 23.7693V13.5869L33 11.0697L17.1365 1L1 11.0697L17.1365 19.4613L23.7141 16.0244V22.3708"
-                stroke="#443EFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <span class="text-xl text-leap-blue-1">Loans without any collateral</span>
-          </div>
-        </div>
-      </div>
+    <div class="flex flex-col w-0 flex-1 overflow-hidden">
+  
+      <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabindex="0">
+        cool
+      </main>
     </div>
   </div>
-
-
-  <!-- section 2 -->
-  <section class="container mx-auto bg-white px-3 h-64 pt-24 sm:pt-0 sm:h-40 overflow-x-auto">
-    <div class="max-w-5xl mx-auto flex space-x-6 sm:space-x-16">
-
-      <div class="pt-10 pb-24">
-        <svg width="105" height="22" viewBox="0 0 105 22" fill="none" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect opacity="0.7" y="-6.10352e-05" width="104.893" height="21.2284" fill="url(#pattern0)" />
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="translate(0 -0.00355935) scale(0.00636943 0.0314725)" />
-            </pattern>
-            <image id="image0" width="157" height="32"
-              xlink:href="data:image/png;base64,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" />
-          </defs>
-        </svg>
-
-      </div>
-      <div class="pt-10 pb-24">
-        <svg width="105" height="22" viewBox="0 0 105 22" fill="none" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect opacity="0.7" y="-6.10352e-05" width="104.893" height="21.2284" fill="url(#pattern0)" />
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="translate(0 -0.00355935) scale(0.00636943 0.0314725)" />
-            </pattern>
-            <image id="image0" width="157" height="32"
-              xlink:href="data:image/png;base64,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" />
-          </defs>
-        </svg>
-
-      </div>
-      <div class="pt-10 pb-24">
-        <svg width="105" height="22" viewBox="0 0 105 22" fill="none" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect opacity="0.7" y="-6.10352e-05" width="104.893" height="21.2284" fill="url(#pattern0)" />
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="translate(0 -0.00355935) scale(0.00636943 0.0314725)" />
-            </pattern>
-            <image id="image0" width="157" height="32"
-              xlink:href="data:image/png;base64,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" />
-          </defs>
-        </svg>
-
-      </div>
-      <div class="pt-10 pb-24">
-        <svg width="105" height="22" viewBox="0 0 105 22" fill="none" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect opacity="0.7" y="-6.10352e-05" width="104.893" height="21.2284" fill="url(#pattern0)" />
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="translate(0 -0.00355935) scale(0.00636943 0.0314725)" />
-            </pattern>
-            <image id="image0" width="157" height="32"
-              xlink:href="data:image/png;base64,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" />
-          </defs>
-        </svg>
-
-      </div>
-      <div class="pt-10 pb-24">
-        <svg width="105" height="22" viewBox="0 0 105 22" fill="none" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect opacity="0.7" y="-6.10352e-05" width="104.893" height="21.2284" fill="url(#pattern0)" />
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="translate(0 -0.00355935) scale(0.00636943 0.0314725)" />
-            </pattern>
-            <image id="image0" width="157" height="32"
-              xlink:href="data:image/png;base64,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" />
-          </defs>
-        </svg>
-
-      </div>
-      <div class="pt-10 pb-24">
-        <svg width="105" height="22" viewBox="0 0 105 22" fill="none" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect opacity="0.7" y="-6.10352e-05" width="104.893" height="21.2284" fill="url(#pattern0)" />
-          <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0" transform="translate(0 -0.00355935) scale(0.00636943 0.0314725)" />
-            </pattern>
-            <image id="image0" width="157" height="32"
-              xlink:href="data:image/png;base64,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" />
-          </defs>
-        </svg>
-
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- section 3 -->
-  <section class="container mx-auto bg-section-three px-3 pt-10 sm:pt-16 ">
-    <div class="max-w-5xl mx-auto px-3">
-      <!-- section 3 header -->
-      <div class="text-center mb-10 sm:mb-16">
-        <p class="text-leap-gray-2 text-base sm:text-xl">3 easy steps, 10 minutes flat</p>
-        <h1 class="font-bold text-xl sm:text-5xl text-leap-black leading-10">Instant loan offer</h1>
-      </div>
-
-      <!-- illustration part -->
-      <div class="flex items-center pb-20 overflow-x-scroll">
-        <div class="section-three-single-illustration">
-          <figure class="mb-8">
-            <img src="./img/Vector.png" />
-          </figure>
-          <div>
-            <h6 class="text-leap-blue-2 text-xs sm:text-sm font-semibold tracking-normal">STEP 2</h6>
-            <h5 class="text-lg sm:text-xl font-semibold text-leap-black">Fill your information online</h5>
-            <p class="text-base sm:text-lg text-leap-gray-2">We support 2300 courses across 230 colleges. Choose yours
-              now</p>
-          </div>
-        </div>
-        <div class="section-three-single-illustration">
-          <figure class="mb-8">
-            <img src="./img/leapfinance-student 1.png" />
-          </figure>
-          <div>
-            <h6 class="text-leap-blue-2 text-xs sm:text-sm font-semibold tracking-normal">STEP 2</h6>
-            <h5 class="text-lg sm:text-xl font-semibold text-leap-black">Fill your information online</h5>
-            <p class="text-base sm:text-lg text-leap-gray-2">We support 2300 courses across 230 colleges. Choose yours
-              now</p>
-          </div>
-        </div>
-        <div class="section-three-single-illustration">
-          <figure class="mb-8">
-            <img src="./img/high-five-people 1.png" />
-          </figure>
-          <div>
-            <h6 class="text-leap-blue-2 text-xs sm:text-sm font-semibold tracking-normal">STEP 2</h6>
-            <h5 class="text-lg sm:text-xl font-semibold text-leap-black">Fill your information online</h5>
-            <p class="text-base sm:text-lg text-leap-gray-2">We support 2300 courses across 230 colleges. Choose yours
-              now</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- section 4 -->
-  <section class="container mx-auto bg-white px-3">
-    <div class="max-w-5xl mx-auto px-3 ">
-      <div class="flex sm:justify-center py-12 space-x-12 sm:space-x-40 overflow-x-scroll">
-        <div>
-          <h6 class="text-leap-gray-2 text-sm">Schools supported</h6>
-          <h2 class="text-leap-black text-5xl">231+</h2>
-        </div>
-        <div>
-          <h6 class="text-leap-gray-2 text-sm">Schools supported</h6>
-          <h2 class="text-leap-black text-5xl">231+</h2>
-        </div>
-        <div>
-          <h6 class="text-leap-gray-2 text-sm">Schools supported</h6>
-          <h2 class="text-leap-black text-5xl">231+</h2>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- section 5 -->
-  <section class="container mx-auto bg-leap-black px-3 pt-10 sm:pt-16 section-five-desktop">
-    <div class="max-w-5xl mx-auto px-3">
-      <!-- section 5 header -->
-      <div class="text-center mb-10 sm:mb-16 space-y-4">
-        <h1 class="font-bold text-xl sm:text-5xl text-white leading-10">Get a decision in 5 mins</h1>
-        <p class="text-white text-base sm:text-xl">Get your loan offer in flat 10 mins with our simple 3-step process
-        </p>
-      </div>
-
-      <!-- video -->
-      <div class="flex justify-center">
-        <figure>
-          <img src="./img/Rectangle 7.png" />
-        </figure>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- section 6 -->
-  <section class="container mx-auto bg-white px-3">
-    <div class="max-w-5xl mx-auto px-3">
-      <div class="text-center pt-48 space-y-4 mb-16">
-        <h1 class="font-bold text-xl sm:text-5xl text-leap-black leading-10">Why LeapFinance</h1>
-        <p class="text-leap-gray-2 text-base sm:text-xl">Get your loan offer in flat 10 mins with our simple 3-step
-          process</p>
-      </div>
-
-      <!-- table -->
-      <!-- <div class="flex justify-center pb-24 overflow-x-scroll">
-        <table class="table-auto border-collapse">
-
-          <tr>
-            <th class="px-4 py-2">Company</th>
-            <th class="bg-leap-blue text-white rounded-t-md px-4 py-2">LeapFinance</th>
-            <th class="border-t-2 border-b-2 border-r-2 border-gray-300 rounded-md px-4 py-2">India</th>
-            <th class="px-4 py-2">International</th>
-          </tr>
-          <tbody>
-            <tr>
-              <td class="border-t-2 border-b-2 border-gray-300  px-4 py-2">Interest Rate</td>
-              <td class="border-t-2 border-b-2 border-gray-300 bg-leap-blue text-white  px-4 py-2">10 min offer, 3 day sanction</td>
-              <td class="border-t-2 border-b-2 border-r-2 border-gray-300 px-4 py-2">1 month sanction</td>
-              <td class="border-t-2 border-b-2 border-gray-300 px-4 py-2">1 month sanction</td>
-            </tr>
-            <tr>
-              <td class="border-t-2 border-b-2 border-gray-300   px-4 py-2">Interest Rate</td>
-              <td class="border-t-2 border-b-2 border-gray-300 bg-leap-blue text-white  px-4 py-2">10 min offer, 3 day sanction</td>
-              <td class="border-t-2 border-b-2 border-r-2 border-gray-300 px-4 py-2">1 month sanction</td>
-              <td class="border-t-2 border-b-2 border-gray-300 px-4 py-2">1 month sanction</td>
-            </tr>
-            <tr>
-              <td class="border-t-2 border-b-2 border-gray-300   px-4 py-2">Interest Rate</td>
-              <td class="border-t-2 border-b-2 border-gray-300 bg-leap-blue text-white  px-4 py-2">10 min offer, 3 day sanction</td>
-              <td class="border-t-2 border-b-2 border-r-2 border-gray-300 px-4 py-2">1 month sanction</td>
-              <td class="border-t-2 border-b-2 border-gray-300 px-4 py-2">1 month sanction</td>
-            </tr>
-            <tr>
-              <td class="border-t-2 border-b-2 border-gray-300   px-4 py-2">Interest Rate</td>
-              <td class="border-t-2 border-b-2 border-gray-300 bg-leap-blue text-white  px-4 py-2">10 min offer, 3 day sanction</td>
-              <td class="border-t-2 border-b-2 border-r-2 border-gray-300 px-4 py-2">1 month sanction</td>
-              <td class="border-t-2 border-b-2 border-gray-300 px-4 py-2">1 month sanction</td>
-            </tr>
-            <tr>
-              <td class="border-t-2 border-b-2 border-gray-300   px-4 py-2">Interest Rate</td>
-              <td class="border-t-2 border-b-2 border-gray-300 rounded-b-md shadow-md bg-leap-blue text-white  px-4 py-2">10 min offer, 3 day sanction</td>
-              <td class="border-t-2 border-b-2 border-r-2 border-gray-300 rounded-b-md px-4 py-2">!1 month sanction</td>
-              <td class="border-t-2 border-b-2 border-gray-300 rounded-bl-lg px-4 py-2">12 month sanction</td>
-            </tr>
-          </tbody>
-        </table>
-      </div> -->
-
-      <div class="pt-4 overflow-x-scroll">
-        <div class="flex justify-center pb-24 "> 
-          <div>
-            <div class="border-b border-gray-300 px-4 py-2">Compair</div>
-            <div class="border-b border-gray-300 px-4 py-2">Inter rate</div>
-            <div class="border-b border-gray-300 px-4 py-2">collateral</div>
-            <div class="border-b border-gray-300 px-4 py-2">process</div>
-            <div class="border-b border-gray-300 px-4 py-2">loan size</div>
-            <div class="border-b border-gray-300 px-4 py-2">fees</div>
-          </div>
-          <div class="bg-leap-blue text-white table-col-2-shadow">
-            <div class="border-b border-leap-blue-3 bg-leap-blue rounded-t-md px-4 pb-2 pt-4 -mt-2 table-col-2-shadow">LeapFinance</div>
-            <div class="border-b border-leap-blue-3 px-4 py-2">8-10% fixed</div>
-            <div class="border-b border-leap-blue-3 px-4 py-2">None</div>
-            <div class="border-b border-leap-blue-3 px-4 py-2">10 min offer, 3 day sanction</div>
-            <div class="border-b border-leap-blue-3 px-4 py-2">Full upfront sanction</div>
-            <div class="border-b border-leap-blue-3 bg-leap-blue rounded-b-md px-4 pt-2 pb-4 -mb-2 table-col-2-shadow">1.5-2% upfront cost </div>
-          </div>
-          <div class="table-col-3-shadow rounded-r-md">
-            <div class="border-b border-gray-300 px-4 py-2 rounded-tr-md">India</div>
-            <div class="border-b border-gray-300 px-4 py-2">12-15% floating</div>
-            <div class="border-b border-gray-300 px-4 py-2">Mostly</div>
-            <div class="border-b border-gray-300 px-4 py-2">1 month sanction</div>
-            <div class="border-b border-gray-300 px-4 py-2">Partial sancation</div>
-            <div class="border-b border-gray-300 px-4 py-2 rounded-br-md">2-4% upfront cost</div>
-          </div>
-          <div class="table-col-4 rounded-t-md rounded-b-md">
-            <div class="border-b border-gray-300 px-4 py-2">International</div>
-            <div class="border-b border-gray-300 px-4 py-2">12-15% floating</div>
-            <div class="border-b border-gray-300 px-4 py-2">Mostly</div>
-            <div class="border-b border-gray-300 px-4 py-2">1 month sanction</div>
-            <div class="border-b border-gray-300 px-4 py-2">Partial sancation</div>
-            <div class="border-b border-gray-300 px-4 py-2 ">2-4% upfront cost</div>
-          </div>
-        </div>
-      </div>
-
   
-
-    </div>
-  </section>
-
-
-  <!-- section 7 for desktop-->
-  <section class="hidden sm:block container mx-auto bg-leap-pink px-3 section-seven">
-    <div class="max-w-5xl mx-auto px-3 relative flex justify-between">
-      <div class="flex items-end z-10 ">
-        <span class="font-bold text-white section-seven-heading">Future Designer</span>
-      </div>
-      <figure class="absolute section-seven-fig">
-        <img class="section-seven-img" src="./img/leap-future-designer 1.png" />
-      </figure>
-      <div class="section-seven-quote-div mt-40 z-10">
-        <q class="text-2xl text-leap-black">The whole process from start to finish was seamless. It was a delight to
-          see my loan offer up-front and get a sanction in 3 days.</q>
-        <span class="text-leap-black text-2xl font-semibold">Jason Roy</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- section 7 for mobile-->
-  <section class="block sm:hidden container mx-auto bg-leap-pink px-3">
-    <div class="max-w-5xl mx-auto px-3">
-      <div class="text-center pt-10">
-        <h5 class="text-leap-black text-xl font-semibold mb-8">Jason Roy</h5>
-        <q class="text-xl text-leap-black">The whole process from start to finish was seamless. It was a delight to
-          see my loan offer up-front and get a sanction in 3 days.</q>
-      </div>
-      <div class="mt-8 relative">
-        <figure class="ml-12">
-          <img src="./img/leap-future-designer 1 (1).png">
-        </figure>
-        <span class="font-bold text-white section-seven-heading-mobile">Future Designer</span>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- section 8 -->
-
-  <section class="container mx-auto px-3">
-    <div class="max-w-5xl mx-auto px-3">
-      <div class="mt-12">
-        <h1 class="text-leap-black font-bold text-3xl">Frequently asked</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 col-gap-32 mt-8">
-          <div class="divide-y divide-gray-400">
-            <div class="p-5">
-              <p class="text-leap-black text-xl font-semibold">Who should Refinance ? </p>
-            </div>
-            <div class="p-5">
-              <p class="text-leap-black text-xl font-semibold">Who should Refinance ? </p>
-            </div>
-            <div class="p-5">
-              <p class="text-leap-black text-xl font-semibold">Who should Refinance ? </p>
-            </div>
-            <div class="p-5">
-              <p class="text-leap-black text-xl font-semibold">Who should Refinance ? </p>
-            </div>
-          </div>
-          <div class="hidden sm:block divide-y divide-gray-400">
-            <div class="p-5">
-              <p class="text-leap-black text-xl font-semibold">Who should Refinance ? </p>
-            </div>
-            <div class="p-5">
-              <p class="text-leap-black text-xl font-semibold">Who should Refinance ? </p>
-            </div>
-            <div class="p-5">
-              <p class="text-leap-black text-xl font-semibold">Who should Refinance ? </p>
-            </div>
-          </div>
-          
-        </div>
-
-        <div class="rounded bg-white p-8 mt-12 grid grid-cols-1 sm:grid-cols-2 col-gap-32 mb-12">
-          <div>
-            <p class="text-leap-black text-xl font-semibold">Ask a Specialist</p>
-            <p class="text-leap-gray-2 text-xl">
-              The whole process from start to finish was seamless. It was a delight to see my loan offer up-front and get a sanction in 3 days.
-            </p>
-          </div>
-          <div class="mt-8 sm:mt-0 divide-y divide-gray-400">
-            <p class="text-leap-black text-xl p-4">support@leapfinance.com</p>
-            <p class="text-leap-black text-xl p-4">
-              9284592845
-            </p>
-          </div>
-          
-        </div>
-      </div>
-
-    </div> 
-  </section>
-
-
-  <!-- section 9 -->
-  <section class="container mx-auto bg-white px-3">
-    <div class="max-w-5xl mx-auto px-3">
-      <div class="flex justify-center pt-12">
-        <h1 class="text-leap-black text-3xl">Tools , tips and Insights</h1>
-      </div>
-      <div class="mt-12 flex space-x-4 pb-12 overflow-x-scroll">
-        <div>
-          <figure>
-            <img 
-              class="section-nine-img"
-              src="./img/Layer 196.png"
-            />
-          </figure>
-          <p class="text-leap-black text-xl font-semibold">How to pay for your grad school in 4 simple ways</p>
-        </div>
-        <div>
-          <figure>
-            <img 
-              class="section-nine-img"
-              src="./img/Layer 196.png"
-            />
-          </figure>
-          <p class="text-leap-black text-xl font-semibold">How to pay for your grad school in 4 simple ways</p>
-
-        </div>
-        <div>
-          <figure>
-            <img 
-              class="section-nine-img"
-              src="./img/Layer 196.png"
-            />
-          </figure>
-          <p class="text-leap-black text-xl font-semibold">How to pay for your grad school in 4 simple ways</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- footer -->
-  <footer class="container mx-auto bg-white px-3">
-    <div class="max-w-5xl mx-auto px-3 py-12">
-      <div class="flex sm:grid sm:grid-cols-4 overflow-x-scroll">
-        <div class="footer-col">
-          <div class="inline-flex items-center space-x-1">
-            <!-- the avatar and name -->
-            <svg  class="h-6 w-6" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M26.9395 6.96459L24.7374 5.74929L14.3365 0.140227C14.0085 -0.0467422 13.5869 -0.0467422 13.212 0.140227L0.655917 6.96459C0.37481 7.10482 0.140554 7.38527 0.0468512 7.71246C-0.0937025 8.27337 0.187405 8.83428 0.702769 9.02125L5.05993 10.9377V17.3881C5.05993 18.5099 5.52845 19.5382 6.32492 20.2861C8.29267 22.1091 10.5415 23.6048 12.9778 24.7734L13.2589 24.9136C13.3995 25.0071 13.5869 25.0538 13.7743 25.0538C13.9617 25.0538 14.1022 25.0071 14.2896 24.9136L14.5707 24.7734C17.007 23.6048 19.209 22.0623 21.2236 20.2861C22.0201 19.5382 22.4886 18.4632 22.4886 17.3881V10.9844L26.7052 9.11473C27.5954 8.69405 27.6422 7.47875 26.7521 7.01133C26.4241 6.8711 26.0961 6.8711 25.7682 7.01133L13.7743 12.2932L3.79495 7.89943L13.7743 2.47734L23.6599 7.80595L25.2528 8.64731V21.034C25.2528 22.0156 24.8312 22.9504 24.1284 23.6048C21.0362 26.4093 17.5692 28.7932 13.8211 30.6161C10.073 28.7932 6.60602 26.4093 3.51384 23.6048C2.71737 22.9037 2.29571 21.9688 2.29571 21.034V8.50708C2.29571 8.03966 2.0146 7.61898 1.59294 7.43201C0.843322 7.15156 0 7.71246 0 8.50708V21.034C0 22.67 0.702769 24.2125 1.87405 25.2875C5.15364 28.2323 8.80803 30.7564 12.7435 32.6728L13.212 32.9065C13.3526 33 13.54 33.0467 13.7274 33.0467C13.9148 33.0467 14.0554 33 14.2428 32.9065L14.7113 32.6728C18.6936 30.7564 22.348 28.279 25.5808 25.2875C26.7989 24.2125 27.4548 22.6232 27.4548 21.034V7.99292C27.5485 7.57224 27.3143 7.15156 26.9395 6.96459ZM13.7743 14.7238C13.9148 14.7238 14.1022 14.6771 14.2428 14.6303L20.1929 12.0127V17.4348C20.1929 17.9023 20.0055 18.3229 19.6775 18.6501C17.8972 20.2394 15.9294 21.5949 13.7743 22.67C11.6191 21.5949 9.65135 20.2394 7.87101 18.6501C7.54305 18.3229 7.35564 17.9023 7.35564 17.4348V12.0127L13.3057 14.6303C13.4463 14.6771 13.6337 14.7238 13.7743 14.7238Z"
-                fill="#443EFF" />
-            </svg>
-            <p class="text-lg font-bold">
-              LeapFinance
-            </p>
-          </div>
-          <p class="text-sm text-leap-gray-1">@2019 LeapFinance pvt ltd</p>
-        </div>
-        <div class="space-y-2 footer-col">
-          <h6 class="text-leap-gray-2 text-sm font-semibold">Navigation</h6>
-          <ul class="space-y-2">
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Loans For School</a>
-            </li>
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Refinance</a>
-            </li>
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Learn</a>
-            </li>
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">About us</a>
-            </li>
-          </ul>
-
-        </div>
-        <div class="space-y-2 footer-col">
-          <h6 class="text-leap-gray-2 text-sm font-semibold">Legal</h6>
-          <ul class="space-y-2">
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Privacy policy</a>
-            </li>
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Cookie policy</a>
-            </li>
-          </ul>
-
-        </div>
-        <div class="space-y-2 footer-col">
-          <h6 class="text-leap-gray-2 text-sm font-semibold">Contact</h6>
-          <ul class="space-y-2">
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Get Support</a>
-            </li>
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Call us</a>
-            </li>
-            <li>
-              <a class="text-sm text-leap-gray-1" href="#">Email us</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-   
-    </div>
-  </footer>
-
 
 </body>
 
