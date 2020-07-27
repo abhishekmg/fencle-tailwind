@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="stylesheet" href="/build/tailwind.css">
-  <title>LeapFinance clone</title>
+  <title>Fentacle clone</title>
 </head>
 
 <body class="antialiased">
@@ -17,52 +17,230 @@
     <div class="flex flex-shrink-0">
       <div class="flex flex-col w-64">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
-        <div class="flex flex-col flex-grow bg-my-gray pt-5 pb-4 overflow-y-auto">
-          
-          <div class="px-2">
-            <p>Infosis</p>
+        <div class="flex flex-col flex-grow bg-my-gray pt-2 pb-4">
+
+          <!-- company part -->
+          <div class="pl-2 pr-4">
+            <div class="p-2 bg-white flex rounded company-card">
+              <!-- logo -->
+              <div class="h-10 w-10 bg-black rounded-md flex justify-center pt-2 mr-4">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="26">
+                    <path
+                      d="M12.9416 25.7623C19.9519 25.7623 25.6349 20.0794 25.6349 13.0691C25.6349 6.05879 19.9519 0.375824 12.9416 0.375824C5.93132 0.375824 0.248352 6.05879 0.248352 13.0691C0.248352 20.0794 5.93132 25.7623 12.9416 25.7623Z"
+                      fill="white" />
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <path
+                      d="M17.0957 6.78781C15.0593 3.96269 11.7403 2.1236 7.99172 2.1236C5.32244 2.1236 2.87097 3.05612 0.945312 4.61316"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M9.85728 5.44511C6.37882 5.61432 3.02877 7.39624 0.987158 10.54C-0.466632 12.7787 -1.01972 15.3425 -0.76266 17.8056"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.06698 9.67422C3.72699 12.2535 2.61815 15.8824 3.39752 19.549C3.95249 22.16 5.37433 24.364 7.29771 25.9238"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.53406 17.0646C7.42279 20.4319 9.86229 23.3383 13.3619 24.6816C15.8538 25.6382 18.4767 25.6462 20.8324 24.8826"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M12.557 20.4957C15.7811 21.8124 19.5703 21.6132 22.7493 19.6268C25.013 18.2123 26.5978 16.1224 27.4057 13.7815"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M18.3269 17.5888C21.4668 16.4051 23.8792 13.9009 24.5722 10.6408C25.0657 8.31927 24.6067 5.99333 23.4397 3.99484"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M20.5014 11.0506C20.999 7.60379 19.889 3.97528 17.1925 1.37131C15.2724 -0.482921 12.8612 -1.51505 10.3944 -1.73269"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </svg>
+              </div>
+              <!-- name -->
+              <div class="mr-6">
+                <h6 class="text-sm font-semibold">Infosys</h6>
+                <p class="text-sm font-semibold opacity-75">Banglore Campus</p>
+              </div>
+              <!-- down arrow -->
+              <div class="pt-4">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 1L5 5L1 1" stroke="#818386" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
+              </div>
+            </div>
           </div>
 
 
 
-          <div class="mt-5 flex-1 flex flex-col">
-            <nav class="flex-1 px-2 bg-my-gray">
-              <a href="#" class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-                Dashboard
-              </a>
-              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                Team
-              </a>
-              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                </svg>
-                Projects
-              </a>
-              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                Calendar
-              </a>
-              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                </svg>
-                Documents
-              </a>
-              <a href="#" class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-gray-2 rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                <svg class="mr-3 h-6 w-6 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-                Reports
-              </a>
+          <div class="flex-1 flex flex-col">
+            <nav class="flex-1 bg-my-gray">
+              <!-- menu items -->
+              <div class="flex-1 divide-y divide-my-gray-3">
+                <!-- first menu items -->
+                <div class="pt-5  pl-2 pr-4 pb-2">
+                  <a href="#"
+                    class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Dashboard
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Team
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                    </svg>
+                    Projects
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Calendar
+                  </a>
+                </div>
+                <!-- second menu items -->
+                <div class=" pt-5  pl-2 pr-4 pb-2">
+                  <a href="#"
+                    class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Dashboard
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Team
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                    </svg>
+                    Projects
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Calendar
+                  </a>
+
+                </div>
+                <!-- third menu items -->
+                <div class=" pt-5  pl-2 pr-4 pb-16">
+                  <a href="#"
+                    class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Dashboard
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Team
+                  </a>
+                  <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                    <svg
+                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                    </svg>
+                    Projects
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- bottom part -->
+
+              <div class="bg-my-gray-4 h-40 menu-bottom-section pl-2 pr-4 py-3">
+                <a href="#"
+                  class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                  <svg
+                    class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                  Settings
+                </a>
+                <a href="#"
+                  class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                  <svg
+                    class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                  </svg>
+                  Notifications
+                </a>
+                <!-- user dropdown -->
+                <div class="mt-1 px-2 py-2 flex items-center text-sm leading-5 font-medium text-my-black ">
+                  <figure>
+                    <img class="ml-2 mr-3 h-5 w-5" src="./img/profile.png" />
+                  </figure>
+                  <span class="mr-3">
+                    James Anderson
+                  </span>
+                  <!-- down arrow -->
+                  <div class="pt-1">
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 1L5 5L1 1" stroke="#818386" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
             </nav>
           </div>
         </div>
@@ -70,13 +248,225 @@
     </div>
 
     <div class="flex flex-col w-0 flex-1 overflow-hidden">
-  
+
       <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabindex="0">
-        cool
+        <header class="px-8 py-4">
+          <!-- notifer -->
+          <div class="bg-my-gray-4 p-2 rounded flex justify-between border border-my-gray-5">
+            <div>
+              <button class="mr-3 bg-my-green text-white rounded py-1 px-2 text-xs font-medium"> 
+                Sample Data
+              </button>
+              <span class="text-xs font-medium">The assets list is displayed are representative of a subscription business.</span>
+            </div>
+            <div>
+              <a href="#" class="inline-flex items-center text-my-blue text-xs font-medium">
+                Got it 
+                <svg class="ml-2" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L1 9" stroke="#0099DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                  
+              </a>
+            </div>
+          </div>
+
+          <!-- options div -->
+          <div class="flex items-center justify-between mt-5">
+            <!-- desc -->
+            <div class="flex flex-col">
+              <span class="font-medium text-sm text-my-black">Assets / Assets List</span>
+              <span class="text-my-black-2 font-bold text-2xl">Assets List</span>
+            </div>
+            <!-- options -->
+            <div class="flex items-center">
+          
+              <button class="mr-2 bg-my-gray-6 p-2 rounded">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 4L6 8L10 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+              </button>
+              <button class="mr-2 bg-my-gray-6 p-2 rounded">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 4L10 8L6 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+              </button>
+
+              <button class="mr-3 rounded border border-my-gray-5 p-2">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="16" height="16" fill="white" fill-opacity="0.01"/>
+                  <circle cx="6.5" cy="6.5" r="5.5" stroke="#49494C" stroke-width="1.5"/>
+                  <path d="M15 15L10.5 10.5" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </button>
+              <button class="mr-3 bg-my-gray-6 rounded py-2 px-3 font-medium text-sm">
+                Import Assets
+              </button>
+              <button class="mr-3 bg-my-blue text-white rounded py-2 px-3 font-medium text-sm">
+                Add Assets
+              </button>
+              <a href="#" class="space-y-1">
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
+                    fill="#818386" />
+                </svg>
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
+                    fill="#818386" />
+                </svg>
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
+                    fill="#818386" />
+                </svg>
+
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <!-- main table -->
+        <div class="flex flex-col px-8 py-4">
+          <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+            <div class="align-middle inline-block min-w-full overflow-hidden sm:rounded-lg border-b border-gray-200">
+              <table class="min-w-full divide-y divide-gray-200">
+                <thead>
+                  <tr>
+                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Name
+                    </th>
+                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Title
+                    </th>
+                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Email
+                    </th>
+                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Role
+                    </th>
+                    <th class="p-3 bg-gray-50"></th>
+                    <th class="p-3 bg-gray-50"></th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-300">
+                  <tr>
+                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Jane Cooper
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Regional Paradigm Technician
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      jonathon.hills84@example.com
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Jane Cooper
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Regional Paradigm Technician
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      jonathon.hills84@example.com
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Jane Cooper
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Regional Paradigm Technician
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      jonathon.hills84@example.com
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Jane Cooper
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Regional Paradigm Technician
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      jonathon.hills84@example.com
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Jane Cooper
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Regional Paradigm Technician
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      jonathon.hills84@example.com
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    </td>
+                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      Admin
+                    </td>
+                  </tr>
+        
+                  <!-- More rows... -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
       </main>
     </div>
   </div>
-  
+
 
 </body>
 
