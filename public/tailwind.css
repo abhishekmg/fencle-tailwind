@@ -13,3 +13,11 @@
 .table-shadow-col {
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.04);
 }
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #D8D8D8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

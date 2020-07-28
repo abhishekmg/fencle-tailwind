@@ -254,17 +254,20 @@
           <!-- notifer -->
           <div class="bg-my-gray-4 p-2 rounded flex justify-between border border-my-gray-5">
             <div>
-              <button class="mr-3 bg-my-green text-white rounded py-1 px-2 text-xs font-medium"> 
+              <button class="mr-3 bg-my-green text-white rounded py-1 px-2 text-xs font-medium">
                 Sample Data
               </button>
-              <span class="text-xs font-medium">The assets list is displayed are representative of a subscription business.</span>
+              <span class="text-xs font-medium">The assets list is displayed are representative of a subscription
+                business.</span>
             </div>
             <div>
               <a href="#" class="inline-flex items-center text-my-blue text-xs font-medium">
-                Got it 
-                <svg class="ml-2" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1L5 5L1 9" stroke="#0099DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
+                Got it
+                <svg class="ml-2" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L1 9" stroke="#0099DA" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
               </a>
             </div>
           </div>
@@ -278,26 +281,29 @@
             </div>
             <!-- options -->
             <div class="flex items-center">
-          
+
               <button class="mr-2 bg-my-gray-6 p-2 rounded">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 4L6 8L10 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  
+                  <path d="M10 4L6 8L10 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
               </button>
               <button class="mr-2 bg-my-gray-6 p-2 rounded">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 4L10 8L6 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  
+                  <path d="M6 4L10 8L6 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
               </button>
 
               <button class="mr-3 rounded border border-my-gray-5 p-2">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="16" height="16" fill="white" fill-opacity="0.01"/>
-                  <circle cx="6.5" cy="6.5" r="5.5" stroke="#49494C" stroke-width="1.5"/>
-                  <path d="M15 15L10.5 10.5" stroke="#49494C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                  
+                  <rect width="16" height="16" fill="white" fill-opacity="0.01" />
+                  <circle cx="6.5" cy="6.5" r="5.5" stroke="#49494C" stroke-width="1.5" />
+                  <path d="M15 15L10.5 10.5" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
               </button>
               <button class="mr-3 bg-my-gray-6 rounded py-2 px-3 font-medium text-sm">
                 Import Assets
@@ -334,135 +340,978 @@
               <table class="min-w-full divide-y divide-gray-200">
                 <thead>
                   <tr>
-                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Name
+                    <th class="p-3 text-left text-sm font-semibold">
+                      <!-- Asset Image / Name -->
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <label for="assetname" class="mr-24">
+                          Asset Image / Name
+                        </label>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+
+                      </div>
+
                     </th>
-                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Title
+                    <th class="p-3 text-left text-sm font-semibold">
+                      <div class="flex items-center">
+                        <span class="mr-1">Asset Id</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+
+
                     </th>
-                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Email
+                    <th class="p-3 text-left text-sm font-semibold">
+                      <div class="flex items-center">
+                        <span class="mr-24">
+                          Asset Category
+                        </span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+
                     </th>
-                    <th class="p-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Role
+                    <th class="p-3 text-left  text-sm font-semibold">
+                      <div class="flex items-center">
+                        <span class="mr-6">Asset Status</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+
                     </th>
-                    <th class="p-3 bg-gray-50"></th>
-                    <th class="p-3 bg-gray-50"></th>
+                    <th class="p-3 text-left text-sm  font-semibold">
+                      <div class="flex items-center">
+                        <span class="mr-16">Asset Subcategory</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+
+                    </th>
+                    <th class="p-3 text-right">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 4V16" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M16 10L4 10" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+
+                    </th>
                   </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-300">
                   <tr>
-                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Jane Cooper
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Regional Paradigm Technician
+                    <td class="p-3 text-sm font-medium">
+                      6283716
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      jonathon.hills84@example.com
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
                     </td>
                   </tr>
+                  <!-- More rows... -->
 
                   <tr>
-                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Jane Cooper
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Regional Paradigm Technician
+                    <td class="p-3 text-sm font-medium">
+                      6283716
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      jonathon.hills84@example.com
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
                     </td>
                   </tr>
-
                   <tr>
-                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Jane Cooper
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Regional Paradigm Technician
+                    <td class="p-3 text-sm font-medium">
+                      6283716
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      jonathon.hills84@example.com
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
                     </td>
                   </tr>
-
                   <tr>
-                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Jane Cooper
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Regional Paradigm Technician
+                    <td class="p-3 text-sm font-medium">
+                      6283716
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      jonathon.hills84@example.com
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
                     </td>
                   </tr>
-
                   <tr>
-                    <td class="table-shadow-col p-3 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Jane Cooper
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Regional Paradigm Technician
+                    <td class="p-3 text-sm font-medium">
+                      6283716
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      jonathon.hills84@example.com
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
                     </td>
-                    <td class="p-3 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Admin
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      6283716
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
+                    </td>
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      6283716
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
+                    </td>
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      6283716
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
+                    </td>
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      6283716
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
+                    </td>
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      6283716
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
+                    </td>
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-shadow-col p-3 text-sm font-semibold">
+                      <div class="flex items-center">
+                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                        <figure class="mr-2">
+                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
+                        </figure>
+                        <span>Jane Cooper</span>
+
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      6283716
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Escalators and elevator systems
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      <div class="flex items-center">
+                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
+                        </svg>
+                        <span>In Progress</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-sm font-medium">
+                      Generators and transformers
+                    </td>
+                    <td class="p-3 text-sm font-medium flex items-center">
+                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white" />
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" rx="4" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="14" height="14" fill="white" transform="translate(3 3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <circle cx="10.5" cy="5" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="10" r="1.5" fill="#818386"/>
+                          <circle cx="10.5" cy="15" r="1.5" fill="#818386"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="3" height="13" fill="white" transform="translate(9 3.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                           -->
+
+
+
                     </td>
                   </tr>
         
-                  <!-- More rows... -->
+  
+                  
+
+
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        
+
       </main>
     </div>
   </div>
