@@ -21,7 +21,7 @@
 
           <!-- company part -->
           <div class="pl-2 pr-4">
-            <div class="p-2 bg-white flex rounded company-card">
+            <div class="p-2 bg-white flex rounded hover:bg-gray-400 company-card cursor-pointer">
               <!-- logo -->
               <div class="h-10 w-10 bg-black rounded-md flex justify-center pt-2  mr-0 sm:mr-4">
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,138 +74,170 @@
 
 
           <div class="flex-1 flex flex-col">
-            <nav class="flex-1 bg-my-gray">
+            <navbar class="flex-1 bg-my-gray">
               <!-- menu items -->
-              <div class="flex-1 divide-y divide-my-gray-3">
+              <div class="flex-1 overflow-y-scroll menu-items-div divide-y divide-my-gray-3">
                 <!-- first menu items -->
-                <div class="pt-5  pl-2 pr-4 pb-2">
-                  <a href="#"
-                    class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                    <span class="hidden sm:block">Dashboard</span>
+                <nav class="pt-5  pl-2 pr-4 pb-2">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md  hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <span class="hidden sm:block">Dashboard</span>
 
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    <span class="hidden sm:block">Team</span>
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                    </svg>
-                    <span class="hidden sm:block">Projects</span>
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span class="hidden sm:block">Calendar</span>
-                  </a>
-                </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <span class="hidden sm:block">Team</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                        </svg>
+                        <span class="hidden sm:block">Projects</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span class="hidden sm:block">Calendar</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </nav>
                 <!-- second menu items -->
-                <div class=" pt-5  pl-2 pr-4 pb-2">
-                  <a href="#"
-                    class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                    <span class="hidden sm:block">Dashboard</span>
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    <span class="hidden sm:block">Team</span>
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                    </svg>
-                    <span class="hidden sm:block">Projects</span>
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span class="hidden sm:block">Calendar</span>
-                  </a>
+                <nav class=" pt-5  pl-2 pr-4 pb-2">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md  hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <span class="hidden sm:block">Dashboard</span>
 
-                </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <span class="hidden sm:block">Team</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                        </svg>
+                        <span class="hidden sm:block">Projects</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span class="hidden sm:block">Calendar</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </nav>
                 <!-- third menu items -->
-                <div class=" pt-5  pl-2 pr-4 pb-16">
-                  <a href="#"
-                    class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                    <span class="hidden sm:block">Dashboard</span>
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    <span class="hidden sm:block">Team</span>
-                  </a>
-                  <a href="#"
-                    class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
-                    <svg
-                      class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
-                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                    </svg>
-                    <span class="hidden sm:block">Projects</span>
-                  </a>
-                </div>
+                <nav class=" pt-5  pl-2 pr-4 pb-16">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        class="group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md  hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-focus:text-white transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <span class="hidden sm:block">Dashboard</span>
+
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <span class="hidden sm:block">Team</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                        <svg
+                          class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                        </svg>
+                        <span class="hidden sm:block">Projects</span>
+                      </a>
+                    </li>
+        
+                  </ul>
+                </nav>
 
               </div>
 
               <!-- bottom part -->
 
-              <div class="bg-my-gray-4 h-40 menu-bottom-section pl-2 pr-4 py-3">
+              <div class="absolute w-20 sm:w-64 bottom-0  bg-my-gray-4 h-40 menu-bottom-section pl-2 pr-4 py-3">
                 <a href="#"
-                  class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                  class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
                   <svg
                     class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -215,7 +247,7 @@
                   <span class="hidden sm:block">Settings</span>
                 </a>
                 <a href="#"
-                  class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
+                  class="mt-1 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-my-black rounded-md hover:bg-gray-400 focus:outline-none focus:bg-my-blue focus:text-white transition ease-in-out duration-150">
                   <svg
                     class="ml-2 mr-3 h-5 w-5 text-my-gray-2 group-hover:text-indigo-300 group-focus:text-indigo-300 transition ease-in-out duration-150"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -225,7 +257,7 @@
                   <span class="hidden sm:block">Notifications</span>
                 </a>
                 <!-- user dropdown -->
-                <div class="mt-1 px-2 py-2 flex items-center text-sm leading-5 font-medium text-my-black ">
+                <div class="cursor-pointer mt-1 px-2 py-2 flex items-center text-sm leading-5 hover:bg-gray-400 rounded font-medium text-my-black ">
                   <figure>
                     <img class="ml-2 mr-3 h-5 w-5" src="./img/profile.png" />
                   </figure>
@@ -242,7 +274,8 @@
                   </div>
                 </div>
               </div>
-            </nav>
+            </navbar>
+
           </div>
         </div>
       </div>
@@ -253,16 +286,17 @@
     <div class="flex flex-col w-0 flex-1 overflow-hidden">
 
       <main class="flex-1 relative z-0 focus:outline-none" tabindex="0">
-        <header class="px-8 py-4 overflow-x-scroll">
-          <div class="header-width overflow-x-scroll">
+        <header class="px-2 sm:px-8 py-4">
+          <div class="header-width">
             <!-- notifer -->
-            <div class="bg-my-gray-4 p-2 rounded flex justify-between border border-my-gray-5">
-              <div>
-                <button class="mr-3 bg-my-green text-white rounded py-1 px-2 text-xs font-medium">
+            <div class="bg-my-gray-4 p-2 rounded flex flex-col sm:flex-row justify-between border border-my-gray-5">
+              <div class="flex flex-col sm:flex-row items-center">
+                <button class="mr-0 sm:mr-3 mb-2 sm:mb-0 bg-my-green text-white rounded py-1 px-2 text-xs font-medium">
                   Sample Data
                 </button>
                 <span class="text-xs font-medium">The assets list is displayed are representative of a subscription
-                  business.</span>
+                  business.
+                </span>
               </div>
               <div>
                 <a href="#" class="inline-flex items-center text-my-blue text-xs font-medium">
@@ -277,62 +311,71 @@
             </div>
 
             <!-- options div -->
-            <div class="flex items-center justify-between mt-5">
+            <div class="flex flex-col sm:flex-row items-center justify-between mt-5">
               <!-- desc -->
-              <div class="flex flex-col">
+              <div class="flex flex-col mb-3 sm:mb-0">
                 <span class="font-medium text-sm text-my-black">Assets / Assets List</span>
                 <span class="text-my-black-2 font-bold text-2xl">Assets List</span>
               </div>
               <!-- options -->
-              <div class="flex items-center">
+              <div class="flex flex-col sm:flex-row items-center">
 
-                <button class="mr-2 bg-my-gray-6 p-2 rounded">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 4L6 8L10 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
+                <!-- first set  -->
+                <div class="mr-0 sm:mr-3 mb-3 sm:mb-0 flex items-center">
+                  <button class="mr-2 hover:bg-gray-400 bg-my-gray-6 p-2 rounded">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 4L6 8L10 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+  
+                  </button>
+                  <button class="mr-2 hover:bg-gray-400 bg-my-gray-6 p-2 rounded">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 4L10 8L6 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+  
+                  </button>
+  
+                  <button class="rounded hover:bg-gray-400 border border-my-gray-5 p-2">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="16" height="16" fill="white" fill-opacity="0.01" />
+                      <circle cx="6.5" cy="6.5" r="5.5" stroke="#49494C" stroke-width="1.5" />
+                      <path d="M15 15L10.5 10.5" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- second set -->
+                <div class="flex items-center">
+                  <button class="mr-3 hover:bg-gray-400 bg-my-gray-6 rounded py-2 px-3 font-medium text-sm">
+                    Import Assets
+                  </button>
+                  <button class="mr-3 bg-my-blue hover:bg-blue-400 text-white rounded py-2 px-3 font-medium text-sm">
+                    Add Assets
+                  </button>
+                  <a href="#" class="hover:bg-gray-200 rounded -mr-1 space-y-1 p-2">
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
+                        fill="#818386" />
+                    </svg>
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
+                        fill="#818386" />
+                    </svg>
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
+                        fill="#818386" />
+                    </svg>
+  
+                  </a>
+                </div>
 
-                </button>
-                <button class="mr-2 bg-my-gray-6 p-2 rounded">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 4L10 8L6 12" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-
-                </button>
-
-                <button class="mr-3 rounded border border-my-gray-5 p-2">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="16" fill="white" fill-opacity="0.01" />
-                    <circle cx="6.5" cy="6.5" r="5.5" stroke="#49494C" stroke-width="1.5" />
-                    <path d="M15 15L10.5 10.5" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </button>
-                <button class="mr-3 bg-my-gray-6 rounded py-2 px-3 font-medium text-sm">
-                  Import Assets
-                </button>
-                <button class="mr-3 bg-my-blue text-white rounded py-2 px-3 font-medium text-sm">
-                  Add Assets
-                </button>
-                <a href="#" class="space-y-1">
-                  <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
-                      fill="#818386" />
-                  </svg>
-                  <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
-                      fill="#818386" />
-                  </svg>
-                  <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4 2C4 0.89543 3.10457 -1.35705e-07 2 -8.74228e-08C0.89543 -3.91405e-08 -1.35705e-07 0.895431 -8.74228e-08 2C-3.91405e-08 3.10457 0.89543 4 2 4C3.10457 4 4 3.10457 4 2Z"
-                      fill="#818386" />
-                  </svg>
-
-                </a>
+      
+     
               </div>
             </div>
           </div>
@@ -341,32 +384,38 @@
 
         <!-- main table -->
         <div class="flex flex-col px-8 py-4">
-          <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-            <div class="align-middle inline-block min-w-full overflow-hidden sm:rounded-lg border-b border-gray-200">
+          <!-- <div class="-my-2 py-2 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"> -->
+            <div class="relative table-scroll align-middle inline-block min-w-full overflow-scroll sm:rounded-lg border-b border-gray-200">
               <table class="min-w-full divide-y divide-gray-200">
                 <thead>
                   <tr>
-                    <th class="pt-3 pr-3 pb-3 text-left text-sm font-semibold col-1">
+                    <th class="col-1-header pt-3 pr-3 pb-3 text-left text-sm font-semibold col-1">
                       <!-- Asset Image / Name -->
-                      <div class="flex items-center">
-                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
-                        <label for="assetname" class="mr-20">
-                          Asset Image / Name
-                        </label>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
-                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                          <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
+                          <label for="assetname" >
+                            Asset Image / Name
+                          </label>
+                        </div>
+                   
+                        <button class="rounded hover:bg-gray-200">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                            <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </button>
+      
 
                       </div>
 
                     </th>
-                    <th class="p-3 text-left text-sm font-semibold col-2">
+                    <th class="p-3 col-header text-left text-sm font-semibold col-2">
                       <div class="flex items-center">
                         <span class="mr-1">Asset Id</span>
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -377,54 +426,60 @@
 
 
                     </th>
-                    <th class="p-3 text-left text-sm font-semibold col-3">
+                    <th class="p-3 col-header text-left text-sm font-semibold col-3">
                       <div class="flex items-center">
                         <span class="mr-24">
                           Asset Category
                         </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
-                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
+                        <button class="rounded hover:bg-gray-200">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                            <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </button>
                       </div>
 
                     </th>
-                    <th class="p-3 text-left  text-sm font-semibold col-4">
+                    <th class="p-3 col-header text-left  text-sm font-semibold col-4">
                       <div class="flex items-center">
                         <span class="mr-6">Asset Status</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
-                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
+                        <button class="rounded hover:bg-gray-200">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                            <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </button>
                       </div>
 
                     </th>
-                    <th class="p-3 text-left text-sm  font-semibold col-5">
+                    <th class="p-3 col-header text-left text-sm  font-semibold col-5">
                       <div class="flex items-center">
                         <span class="mr-16">Asset Subcategory</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
-                          <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
+                        <button class="rounded hover:bg-gray-200">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="12" height="12" fill="white" fill-opacity="0.01" />
+                            <path d="M5 6H15" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M7 10H13" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M9 14H11" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </button>
                       </div>
 
                     </th>
-                    <th class="p-3 flex justify-end">
+                    <th class="p-3 col-6-header flex justify-end">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 4V16" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
@@ -466,58 +521,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -552,58 +611,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -636,58 +699,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -720,58 +787,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -804,58 +875,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -888,58 +963,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -972,58 +1051,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -1056,58 +1139,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -1140,58 +1227,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -1224,58 +1315,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -1308,58 +1403,62 @@
                     <td class="p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 text-sm font-medium flex items-center">
-                      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                            stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4"  />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
+                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="20" height="20" rx="4" fill="white" />
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                            stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <button class="hover:bg-gray-200 rounded">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="20" height="20" rx="4" />
+                          <g clip-path="url(#clip0)">
+                            <path
+                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
+                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      
+                      <button class="hover:bg-gray-200 rounded">
 
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                          <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                          <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0">
-                            <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-
-
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
+                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0">
+                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
 
                     </td>
                   </tr>
@@ -1371,7 +1470,7 @@
                 </tbody>
               </table>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
 
       </main>
