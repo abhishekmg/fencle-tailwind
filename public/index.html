@@ -14,7 +14,7 @@
   <div class="h-screen flex overflow-hidden">
 
     <!-- Static sidebar for desktop -->
-    <div class="flex flex-shrink-0">
+    <div class="hidden  sm:flex sm:flex-shrink-0">
       <div class="flex flex-col w-20 sm:w-64">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
         <div class="flex flex-col flex-grow bg-my-gray pt-2 pb-4">
@@ -383,13 +383,13 @@
         </header>
 
         <!-- main table -->
-        <div class="flex flex-col px-8 py-4">
+        <div class="flex flex-col px-1 sm:px-8 py-4">
           <!-- <div class="-my-2 py-2 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"> -->
             <div class="relative table-scroll align-middle inline-block min-w-full overflow-scroll sm:rounded-lg border-b border-gray-200">
               <table class="min-w-full divide-y divide-gray-200">
                 <thead>
                   <tr>
-                    <th class="col-1-header pt-3 pr-3 pb-3 text-left text-sm font-semibold col-1">
+                    <th class="hidden sm:block col-1-header pt-3 pr-3 pb-3 text-left text-sm font-semibold col-1 w-full">
                       <!-- Asset Image / Name -->
                       <div class="flex items-center justify-between">
                         <div class="flex items-center">
@@ -415,7 +415,7 @@
                       </div>
 
                     </th>
-                    <th class="p-3 col-header text-left text-sm font-semibold col-2">
+                    <th class="p-3 col-header text-left text-sm font-semibold col-2 w-full">
                       <div class="flex items-center">
                         <span class="mr-1">Asset Id</span>
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -426,7 +426,7 @@
 
 
                     </th>
-                    <th class="p-3 col-header text-left text-sm font-semibold col-3">
+                    <th class="p-3 col-header text-left text-sm font-semibold col-3 w-full">
                       <div class="flex items-center">
                         <span class="mr-24">
                           Asset Category
@@ -445,7 +445,7 @@
                       </div>
 
                     </th>
-                    <th class="p-3 col-header text-left  text-sm font-semibold col-4">
+                    <th class="p-3 col-header text-left  text-sm font-semibold col-4 w-full">
                       <div class="flex items-center">
                         <span class="mr-6">Asset Status</span>
                         <button class="rounded hover:bg-gray-200">
@@ -462,7 +462,7 @@
                       </div>
 
                     </th>
-                    <th class="p-3 col-header text-left text-sm  font-semibold col-5">
+                    <th class="p-3 col-header text-left text-sm  font-semibold col-5 w-full">
                       <div class="flex items-center">
                         <span class="mr-16">Asset Subcategory</span>
                         <button class="rounded hover:bg-gray-200">
@@ -479,7 +479,7 @@
                       </div>
 
                     </th>
-                    <th class="p-3 col-6-header flex justify-end">
+                    <th class="p-3 col-6-header sm:sticky flex justify-end">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 4V16" stroke="#49494C" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
@@ -492,8 +492,8 @@
                 </thead>
                 <!-- table body -->
                 <tbody class="bg-white divide-y divide-gray-300">
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -503,13 +503,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -518,10 +518,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -581,9 +581,8 @@
                     </td>
                   </tr>
                   <!-- More rows... -->
-
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -593,13 +592,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -608,10 +607,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -670,8 +669,8 @@
 
                     </td>
                   </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -681,13 +680,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -696,10 +695,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -758,8 +757,8 @@
 
                     </td>
                   </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -769,13 +768,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -784,10 +783,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -846,8 +845,8 @@
 
                     </td>
                   </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -857,13 +856,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -872,10 +871,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -934,8 +933,8 @@
 
                     </td>
                   </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -945,13 +944,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -960,10 +959,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -1022,8 +1021,8 @@
 
                     </td>
                   </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -1033,13 +1032,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -1048,10 +1047,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -1110,8 +1109,8 @@
 
                     </td>
                   </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -1121,13 +1120,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -1136,10 +1135,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -1198,8 +1197,8 @@
 
                     </td>
                   </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
+                  <tr >
+                    <td class="whitespace-no-wrap hidden sm:block table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
                       <div class="flex items-center">
                         <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
                         <figure class="mr-2">
@@ -1209,13 +1208,13 @@
 
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       6283716
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Escalators and elevator systems
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       <div class="flex items-center">
                         <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -1224,186 +1223,10 @@
                         <span>In Progress</span>
                       </div>
                     </td>
-                    <td class="p-3 text-sm font-medium">
+                    <td class="whitespace-no-wrap p-3 text-sm font-medium">
                       Generators and transformers
                     </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
-                      <button class="hover:bg-gray-200 rounded">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="20" height="20" rx="4"  />
-                          <g clip-path="url(#clip0)">
-                            <path
-                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0">
-                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-
-                      <button class="hover:bg-gray-200 rounded">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="20" height="20" rx="4" />
-                          <g clip-path="url(#clip0)">
-                            <path
-                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0">
-                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                      
-                      <button class="hover:bg-gray-200 rounded">
-
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0)">
-                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0">
-                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
-                      <div class="flex items-center">
-                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
-                        <figure class="mr-2">
-                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
-                        </figure>
-                        <span>Jane Cooper</span>
-
-                      </div>
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      6283716
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      Escalators and elevator systems
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      <div class="flex items-center">
-                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
-                        </svg>
-                        <span>In Progress</span>
-                      </div>
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      Generators and transformers
-                    </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
-                      <button class="hover:bg-gray-200 rounded">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="20" height="20" rx="4"  />
-                          <g clip-path="url(#clip0)">
-                            <path
-                              d="M14.0833 3.58333L16.4166 5.91666L10.5833 11.75L7.08331 12.9167L8.24998 9.41666L14.0833 3.58333Z"
-                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                              d="M15.25 12.9167V15.25C15.25 15.5594 15.1271 15.8562 14.9083 16.075C14.6895 16.2937 14.3927 16.4167 14.0833 16.4167H4.74998C4.44056 16.4167 4.14381 16.2937 3.92502 16.075C3.70623 15.8562 3.58331 15.5594 3.58331 15.25V5.91667C3.58331 5.60725 3.70623 5.3105 3.92502 5.09171C4.14381 4.87292 4.44056 4.75 4.74998 4.75H7.08331"
-                              stroke="#818386" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0">
-                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-
-                      <button class="hover:bg-gray-200 rounded">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="20" height="20" rx="4" />
-                          <g clip-path="url(#clip0)">
-                            <path
-                              d="M14.6666 8.25V15.25C14.6666 15.5594 14.5437 15.8562 14.3249 16.075C14.1061 16.2937 13.8094 16.4167 13.5 16.4167H6.49998C6.19056 16.4167 5.89381 16.2937 5.67502 16.075C5.45623 15.8562 5.33331 15.5594 5.33331 15.25V8.25"
-                              stroke="#818386" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path d="M3.58331 5.91666H16.4166" stroke="#818386" stroke-width="1.5" stroke-miterlimit="10"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M7.66663 5.91666V3.58333H12.3333V5.91666" stroke="#818386" stroke-width="1.5"
-                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0">
-                              <rect width="14" height="14" fill="white" transform="translate(3 3)" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                      
-                      <button class="hover:bg-gray-200 rounded">
-
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0)">
-                            <circle cx="10.5" cy="5" r="1.5" fill="#818386" />
-                            <circle cx="10.5" cy="10" r="1.5" fill="#818386" />
-                            <circle cx="10.5" cy="15" r="1.5" fill="#818386" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0">
-                              <rect width="3" height="13" fill="white" transform="translate(9 3.5)" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-shadow-col pt-3 pr-3 pb-3 text-sm font-semibold">
-                      <div class="flex items-center">
-                        <input type="checkbox" name="assetname" class="w-5 h-5 rounded mr-5" />
-                        <figure class="mr-2">
-                          <img class="w-6 h-6 rounded-full" src="./img/image 79.png" />
-                        </figure>
-                        <span>Jane Cooper</span>
-
-                      </div>
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      6283716
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      Escalators and elevator systems
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      <div class="flex items-center">
-                        <svg class="mr-2" width="8" height="8" viewBox="0 0 8 8" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="4" cy="4" r="4" fill="#65D1FF" />
-                        </svg>
-                        <span>In Progress</span>
-                      </div>
-                    </td>
-                    <td class="p-3 text-sm font-medium">
-                      Generators and transformers
-                    </td>
-                    <td class="p-3 last-col text-sm font-medium flex items-center">
+                    <td class="whitespace-no-wrap p-3 last-col sm:sticky text-sm font-medium flex items-center">
                       <button class="hover:bg-gray-200 rounded">
                         <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="20" height="20" rx="4"  />
@@ -1463,6 +1286,7 @@
                     </td>
                   </tr>
 
+                
 
 
 

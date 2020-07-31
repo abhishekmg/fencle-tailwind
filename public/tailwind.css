@@ -16,69 +16,35 @@
 
 
 
-.checkbox {
-  width: 20px;
-  height: 20px;
-  border: 1.5px solid #D8D8D8;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-/* .header-width {
-  min-width: 700px;
-} */
-
 .col-1 {
-  min-width: 301px;
-  max-width: 301px;
-  width: 100%;
+  min-width: 219px;
+  max-width: 219px;
 }
 
 .col-2{
   min-width: 95px;
   max-width: 95px;
-  width: 100%;
 }
 
 .col-3 {
   min-width: 250px;
   max-width: 250px;
-  width: 100%;
 }
 
 .col-4 {
   min-width: 168px;
   max-width: 168px;
-  width: 100%;
 }
 
 .col-5 {
   min-width: 248px;
   max-width: 248px;
-  width: 100%;
 }
 
 
 .table-scroll {
   height: calc(100vh - 178px);
 }
-
-/* .table-scroll thead th {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 1;
-} */
-
-/* th:first-child {
-  position: -webkit-sticky;
-  position: sticky;
-  right: 0;
-  z-index: 10;
-  background: blue;
-} */
-
 
 
 .col-1-header {
@@ -90,7 +56,7 @@
 }
 
 .col-6-header {
-  position: sticky;
+  /* position: sticky; */
   right: 0;
   top: 0;
   z-index: 22;
@@ -113,7 +79,7 @@
 }
 
 .last-col {
-  position: sticky;
+  /* position: sticky; */
   right: 0;
   z-index: 1;
   background: white;
